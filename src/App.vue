@@ -1,9 +1,6 @@
 <template>
-  <Header></Header>
-  <img
-    src="../src\assets\images\image_principale.webp"
-    alt="image de la salle"
-  />
+  <Header class="header"></Header>
+  <div class="mainImage"></div>
   <Maintext></Maintext>
 </template>
 
@@ -32,7 +29,13 @@ body {
   margin: 0;
 }
 
-img {
+.mainImage {
   width: 100%;
+  min-height: 560px;
+  background-image: url("../src/assets/images/image_principale.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
