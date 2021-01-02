@@ -3,6 +3,9 @@
   <div class="mainImage"></div>
   <Maintext></Maintext>
   <TexteImage></TexteImage>
+  <h1>Nos domaines d'activité : trouvez ce qui vous correspond !</h1>
+  <TexteImage></TexteImage>
+  <TexteImage></TexteImage>
 </template>
 
 <script>
@@ -40,5 +43,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
 }
 </style>

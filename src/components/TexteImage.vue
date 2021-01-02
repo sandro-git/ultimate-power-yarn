@@ -11,9 +11,7 @@
         familiale et performante. Notre objectif sera votre accomplissement !
       </p>
     </div>
-    <div class="image">
-      <img src="@/assets/images/image1.webp" alt="image de la salle" />
-    </div>
+    <img src="@/assets/images/image1.webp" alt="image de la salle" />
   </div>
 </template>
 
@@ -24,6 +22,8 @@ export default {};
 <style scoped>
 .wrapper {
   display: flex;
+  width: 90%;
+  margin: auto;
 }
 
 .wrapper :first-child {
@@ -31,5 +31,17 @@ export default {};
 }
 .texte {
   color: white;
+  padding: 25px;
+  text-align: center;
+  background-color: #f03855;
+  font-size: 18px;
+}
+h2 {
+  margin: auto;
+  font-size: 40px;
+}
+img {
+  width: 50%;
+  height: 490px;
 }
 </style>
