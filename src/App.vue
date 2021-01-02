@@ -2,17 +2,20 @@
   <Header class="header"></Header>
   <div class="mainImage"></div>
   <Maintext></Maintext>
+  <TexteImage></TexteImage>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Maintext from "./components/Maintext.vue";
+import TexteImage from "./components/TexteImage.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    Maintext
+    Maintext,
+    TexteImage
   }
 };
 </script>
