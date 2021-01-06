@@ -1,22 +1,33 @@
 <template>
   <div class="wrapper">
     <div class="texte">
-      <h2>À propos de La Salle</h2>
+      <h2>{{ title }}</h2>
       <p>
-        Coaching personnalisé / Accès libre musculation / Powerlifting /
-        Cross-training / Small group training / Cardio Chez Ultimate Power, le
-        maître-mot est la qualité : vous retrouverez des équipements haut de
-        gamme absolument uniques au département. Les coachs enrichissent
-        activement la vie de nos membres et créent une atmosphère à la fois
-        familiale et performante. Notre objectif sera votre accomplissement !
+        {{ text }}
       </p>
     </div>
-    <img src="@/assets/images/image1.webp" alt="image de la salle" />
+    <img :src="image" alt="image de la salle" />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "TexteImage",
+  props: {
+    text: {
+      type: String,
+      default: ""
+    },
+    title: {
+      type: String,
+      default: ""
+    },
+    image: {
+      type: String,
+      default: ""
+    }
+  }
+};
 </script>
 
 <style scoped>
